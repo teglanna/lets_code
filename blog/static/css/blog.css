@@ -4,15 +4,20 @@
 }
 
 body{
+    height: 100%;
     font-family:'Ubuntu', sans-serif;
     line-height:1.6em;
     color:#666;
     background-image: url(../img/pattern.png);
-    font-size:14px;
+    font-size:16px;
 }
-
+h1 {
+    line-height: 2em;
+}
 .container {
     background: #E6E6E6;
+    min-height: 100%;
+    position: relative;
     
 }
 
@@ -20,11 +25,16 @@ header {
     background: #eee;
     padding: 30px 10px;
 }
-
-nav {
-    margin-left: 240px;
+@media (min-width: 1200px) {
+    nav {
+        margin-left: 280px;
+    }
 }
-
+@media (max-width: 992px) {
+    header span {
+        padding-left:30px;
+    }
+}
 nav ul {
     background: #efefef; 
     /*background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
@@ -108,6 +118,10 @@ a {
 }*/
 
 footer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
     text-align: center;
     padding:20px;
     background:#eee;
