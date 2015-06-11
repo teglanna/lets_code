@@ -1,0 +1,52 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>Let's Code!</title>
+        <link rel="stylesheet" href="{% static "css/blog.css" %}">
+        <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+    </head>
+
+<body>
+<div class="container">
+        <header class="row">
+            <div class="col-md-4"><h1><span>[teglanna]</span></h1></div>
+            <div class="col-md-8">
+                <nav>
+                    <ul>
+                    <li><a href="{% url "blog.views.home" %}">HOME</a></li>
+                        <li><a href="#">CODES</a>
+                        <ul>
+                        <li><a href="{% url "blog.views.python" %}">PYTHON</a>
+                            <ul>
+                                <li><a href="{% url "blog.views.balls" %}">Bouncing Balls</a></li>
+                                <li><a href="{% url "blog.views.horse" %}">Horse Race</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url "blog.views.javascript" %}">JAVASCRIPT</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="{% url "blog.views.learning_stuffs" %}">LEARNING STUFFS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <div class="row">
+        <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+       
+    <div class="row">   
+            <footer>
+                <p>Copyright &copy; 2015</p>
+            </footer>
+    </div>  
+</div>
+    </body>
+</html>

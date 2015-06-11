@@ -1,0 +1,224 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    	<style type="text/css">
+/*!
+ *  Syntax Highlighting based on 'Snippet' by SteamDev (http://steamdev.com/snippet)
+ *  http://syntaxhighlight.in v1.0.0
+ *  Date: Sunday Jan 1, 2012
+ *
+ * .sh_sourceCode is the <pre> 
+ */.sh_default{background:0;padding:0;margin:0;border:0 none}.sh_default pre{background-color:#e7e5dc;color:#5c5c5c;font-weight:normal;font-style:normal;padding:.5em!important;-moz-border-radius:3px!important;-webkit-border-radius:3px!important;border-radius:3px!important;-moz-box-shadow:1px 1px 3px 1px #888!important;-webkit-box-shadow:1px 1px 3px 1px #888!important;box-shadow:1px 1px 3px 1px #888!important}.sh_default .snippet-formatted .snippet-num{margin:0;padding-left:4em}.sh_default .sh_sourceCode li{background-color:#fff;border-left:3px solid #6ce26c}.sh_default .sh_sourceCode li:nth-child(odd){background-color:#f8f8f8}.sh_default .sh_sourceCode .sh_keyword{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_type{color:#8080c0;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_string{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_regexp{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_specialchar{color:#f0f;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_comment{color:#ff8000;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_number{color:#800080;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_preproc{color:#0080c0;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_symbol{color:#ff0080;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_function{color:#046;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_cbracket{color:#ff0080;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_url{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_date{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_time{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_file{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_ip{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_name{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_variable{color:#0080c0;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_oldfile{color:#f0f;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_newfile{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_difflines{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_selector{color:#0080c0;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_property{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_value{color:#a68500;font-weight:normal;font-style:normal}.snippet-textonly:focus{background:#333!important;color:#fff!important}.snippet-wrap pre{margin:5px 0;padding:0}.snippet-wrap .snippet-menu a,.snippet-wrap .snippet-hide a{padding:0 5px}.snippet-wrap pre.sh_sourceCode{padding:1em;line-height:1.8em;overflow:auto;position:relative;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;box-shadow:2px 2px 5px #000;-moz-box-shadow:2px 2px 5px #000;-webkit-box-shadow:2px 2px 5px #000}.snippet-wrap pre.snippet-textonly{padding:2em}.snippet-wrap pre.snippet-formatted{*padding:2em 1em}.snippet-reveal pre.sh_sourceCode{padding:.5em 1em;text-align:right}.snippet-wrap .snippet-num li{padding-left:1.5em}.snippet-wrap .snippet-no-num{list-style:none;padding:0;margin:0}.snippet-wrap .snippet-no-num li{list-style:none;padding-left:0}.snippet-wrap .snippet-num{margin:1em 0 1em 1em;padding-left:3em}.snippet-wrap .snippet-num li{list-style:decimal-leading-zero outside none}.snippet-wrap .snippet-no-num li.box{padding:0 6px;margin-left:-6px}.snippet-wrap .snippet-num li.box{border:1px solid;list-style-position:inside;margin-left:-3em;padding-left:6px}.snippet-wrap .snippet-num li.box{*margin-left:-2.4em}.snippet-wrap li.box-top{border-width:1px 1px 0!important}.snippet-wrap li.box-bot{border-width:0 1px 1px!important}.snippet-wrap li.box-mid{border-width:0 1px!important}.snippet-wrap .snippet-num li .box-sp{width:18px;display:inline-block}.snippet-wrap .snippet-num li .box-sp{*width:27px}.snippet-wrap .snippet-no-num li.box{border:1px solid}.snippet-wrap .snippet-no-num li .box-sp{display:none}.snippet-container .snippet-menu{border-radius:3px;background:#fff;padding:2px 5px 3px;display:inline-block;*display:inline;zoom:1}.snippet-container .sh_url,.snippet-wrap .snippet-toggle{text-decoration:none!important;font:12px sans-serif!important}.snippet-window{border-right-width:1px;border-right-style:solid}.snippet-wrap .snippet-toggle{display:block}.snippet-hide pre{background:#fff!important}.snippet-hide pre a{color:#333!important}
+</style>
+</head>
+<body>
+    
+<div class="container">
+	<div class="row">
+	<h4>horse_race.py</h4></div>
+	<div class="row">
+		<div class="col-md-8">
+<div class="snippet-container"><div class="sh_default snippet-wrap">
+<!--<div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div>-->
+<pre class="shi_pre sh_python snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_preproc">import</span> turtle</li><li><span class="sh_preproc">import</span> random</li><li><span class="sh_preproc">import</span> time</li><li></li><li></li><li><span class="sh_keyword">class</span> <span class="sh_function">Horse</span><span class="sh_symbol">(</span>turtle<span class="sh_symbol">.</span>Turtle<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">def</span> <span class="sh_function">__init__</span><span class="sh_symbol">(</span>self<span class="sh_symbol">,</span> image_file<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_function">super</span><span class="sh_symbol">(</span>Horse<span class="sh_symbol">,</span> self<span class="sh_symbol">).</span><span class="sh_function">__init__</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self<span class="sh_symbol">.</span><span class="sh_function">hideturtle</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self<span class="sh_symbol">.</span><span class="sh_function">shape</span><span class="sh_symbol">(</span>image_file<span class="sh_symbol">)</span></li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">getHorseImages</span><span class="sh_symbol">(</span>num_horses<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;images <span class="sh_symbol">=</span> <span class="sh_symbol">[]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> i <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> num_horses<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;images <span class="sh_symbol">=</span> images <span class="sh_symbol">+</span> <span class="sh_symbol">[</span><span class="sh_string">'horse_'</span> <span class="sh_symbol">+</span> <span class="sh_function">str</span><span class="sh_symbol">(</span>i<span class="sh_number">+1</span><span class="sh_symbol">)</span> <span class="sh_symbol">+</span> <span class="sh_string">'_image.gif'</span><span class="sh_symbol">]</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> images</li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">registerHorseImages</span><span class="sh_symbol">(</span>images<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> i <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_function">len</span><span class="sh_symbol">(</span>images<span class="sh_symbol">)):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;turtle<span class="sh_symbol">.</span><span class="sh_function">register_shape</span><span class="sh_symbol">(</span>images<span class="sh_symbol">[</span>i<span class="sh_symbol">])</span></li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">placeHorses</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">,</span> loc<span class="sh_symbol">,</span> separation<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> i <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_function">len</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">)):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horses<span class="sh_symbol">[</span>i<span class="sh_symbol">].</span><span class="sh_function">hideturtle</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horses<span class="sh_symbol">[</span>i<span class="sh_symbol">].</span><span class="sh_function">penup</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horses<span class="sh_symbol">[</span>i<span class="sh_symbol">].</span><span class="sh_function">setposition</span><span class="sh_symbol">(</span>loc<span class="sh_symbol">[</span><span class="sh_number">0</span><span class="sh_symbol">],</span> loc<span class="sh_symbol">[</span><span class="sh_number">1</span><span class="sh_symbol">]</span> <span class="sh_symbol">+</span> i <span class="sh_symbol">*</span> separation<span class="sh_symbol">)</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horses<span class="sh_symbol">[</span>i<span class="sh_symbol">].</span><span class="sh_function">setheading</span><span class="sh_symbol">(</span><span class="sh_number">180</span><span class="sh_symbol">)</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horses<span class="sh_symbol">[</span>i<span class="sh_symbol">].</span><span class="sh_function">showturtle</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horses<span class="sh_symbol">[</span>i<span class="sh_symbol">].</span><span class="sh_function">pendown</span><span class="sh_symbol">()</span></li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">getBannerImages</span><span class="sh_symbol">(</span>num_horses<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;all_images <span class="sh_symbol">=</span> <span class="sh_symbol">[]</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#get "They're off" banner image</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;images <span class="sh_symbol">=</span> <span class="sh_symbol">[</span><span class="sh_string">'theyre_off_banner.gif'</span><span class="sh_symbol">]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;all_images<span class="sh_symbol">.</span><span class="sh_function">append</span><span class="sh_symbol">(</span>images<span class="sh_symbol">)</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#get early lead banner images</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;images <span class="sh_symbol">=</span> <span class="sh_symbol">[]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> i <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> num_horses<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;images <span class="sh_symbol">=</span> images <span class="sh_symbol">+</span> <span class="sh_symbol">[</span><span class="sh_string">'lead_at_start_'</span> <span class="sh_symbol">+</span> <span class="sh_function">str</span><span class="sh_symbol">(</span>i<span class="sh_number">+1</span><span class="sh_symbol">)</span> <span class="sh_symbol">+</span> <span class="sh_string">'.gif'</span><span class="sh_symbol">]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;all_images<span class="sh_symbol">.</span><span class="sh_function">append</span><span class="sh_symbol">(</span>images<span class="sh_symbol">)</span>&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#get mid-way lead banner images</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;images <span class="sh_symbol">=</span> <span class="sh_symbol">[]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> i <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> num_horses<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;images <span class="sh_symbol">=</span> images <span class="sh_symbol">+</span> <span class="sh_symbol">[</span><span class="sh_string">'looking_good_'</span> <span class="sh_symbol">+</span> <span class="sh_function">str</span><span class="sh_symbol">(</span>i<span class="sh_number">+1</span><span class="sh_symbol">)</span> <span class="sh_symbol">+</span> <span class="sh_string">'.gif'</span><span class="sh_symbol">]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;all_images<span class="sh_symbol">.</span><span class="sh_function">append</span><span class="sh_symbol">(</span>images<span class="sh_symbol">)</span>&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#get "We Have a Winner" banner image</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;images <span class="sh_symbol">=</span> <span class="sh_symbol">[</span><span class="sh_string">'winner_banner.gif'</span><span class="sh_symbol">]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;all_images<span class="sh_symbol">.</span><span class="sh_function">append</span><span class="sh_symbol">(</span>images<span class="sh_symbol">)</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> all_images</li><li></li><li></li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">registerBannerImages</span><span class="sh_symbol">(</span>images<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> i <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_function">len</span><span class="sh_symbol">(</span>images<span class="sh_symbol">)):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> j <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_function">len</span><span class="sh_symbol">(</span>images<span class="sh_symbol">[</span>i<span class="sh_symbol">])):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;turtle<span class="sh_symbol">.</span><span class="sh_function">register_shape</span><span class="sh_symbol">(</span>images<span class="sh_symbol">[</span>i<span class="sh_symbol">][</span>j<span class="sh_symbol">])</span>&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li></li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">generateHorses</span><span class="sh_symbol">(</span>images<span class="sh_symbol">,</span> num_horses<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;horses <span class="sh_symbol">=</span> <span class="sh_symbol">[]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> i <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> num_horses<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horse <span class="sh_symbol">=</span> <span class="sh_function">Horse</span><span class="sh_symbol">(</span>images<span class="sh_symbol">[</span>i<span class="sh_symbol">])</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horses<span class="sh_symbol">.</span><span class="sh_function">append</span><span class="sh_symbol">(</span>horse<span class="sh_symbol">)</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> horses</li><li>&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">findLeadHorse</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;lead_horse <span class="sh_symbol">=</span> <span class="sh_number">0</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> i <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">1</span><span class="sh_symbol">,</span> <span class="sh_function">len</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">)):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> horses<span class="sh_symbol">[</span>i<span class="sh_symbol">].</span><span class="sh_function">position</span><span class="sh_symbol">()[</span><span class="sh_number">0</span><span class="sh_symbol">]</span> <span class="sh_symbol">&lt;</span> horses<span class="sh_symbol">[</span>lead_horse<span class="sh_symbol">].</span><span class="sh_function">position</span><span class="sh_symbol">()[</span><span class="sh_number">0</span><span class="sh_symbol">]:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lead_horse <span class="sh_symbol">=</span> i</li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> lead_horse</li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">displayBanner</span><span class="sh_symbol">(</span>banner<span class="sh_symbol">,</span> position<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;the_turtle <span class="sh_symbol">=</span> turtle<span class="sh_symbol">.</span><span class="sh_function">getturtle</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;the_turtle<span class="sh_symbol">.</span><span class="sh_function">hideturtle</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;the_turtle<span class="sh_symbol">.</span><span class="sh_function">penup</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;the_turtle<span class="sh_symbol">.</span><span class="sh_function">setposition</span><span class="sh_symbol">(</span>position<span class="sh_symbol">[</span><span class="sh_number">0</span><span class="sh_symbol">],</span> position<span class="sh_symbol">[</span><span class="sh_number">1</span><span class="sh_symbol">])</span>&nbsp;&nbsp;&nbsp;&nbsp;</li><li>&nbsp;&nbsp;&nbsp;&nbsp;the_turtle<span class="sh_symbol">.</span><span class="sh_function">showturtle</span><span class="sh_symbol">()</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>&nbsp;&nbsp;&nbsp;&nbsp;the_turtle<span class="sh_symbol">.</span><span class="sh_function">shape</span><span class="sh_symbol">(</span>banner<span class="sh_symbol">)</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;the_turtle<span class="sh_symbol">.</span><span class="sh_function">stamp</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#hide default turtle and keep from drawing</span></li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">startHorses</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">,</span> banners<span class="sh_symbol">,</span> finish_line<span class="sh_symbol">,</span> forward_incr<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#init</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;have_winner <span class="sh_symbol">=</span> False</li><li>&nbsp;&nbsp;&nbsp;&nbsp;early_leading_horse_displayed <span class="sh_symbol">=</span> False</li><li>&nbsp;&nbsp;&nbsp;&nbsp;midrace_leading_horse_displayed <span class="sh_symbol">=</span> False</li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#display "They're off" banner image</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_function">displayBanner</span><span class="sh_symbol">(</span>banner_images<span class="sh_symbol">[</span><span class="sh_number">0</span><span class="sh_symbol">][</span><span class="sh_number">0</span><span class="sh_symbol">],</span> <span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_symbol">-</span><span class="sh_number">300</span><span class="sh_symbol">))</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;i <span class="sh_symbol">=</span> <span class="sh_number">0</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">while</span> <span class="sh_keyword">not</span> have_winner<span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horse <span class="sh_symbol">=</span> horses<span class="sh_symbol">[</span>i<span class="sh_symbol">]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horse<span class="sh_symbol">.</span><span class="sh_function">forward</span><span class="sh_symbol">(</span>random<span class="sh_symbol">.</span><span class="sh_function">randint</span><span class="sh_symbol">(</span><span class="sh_number">1</span><span class="sh_symbol">,</span><span class="sh_number">3</span><span class="sh_symbol">)</span> <span class="sh_symbol">*</span> forward_incr<span class="sh_symbol">)</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#display mid-race lead banner</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lead_horse <span class="sh_symbol">=</span> <span class="sh_function">findLeadHorse</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">)</span> <span class="sh_comment"># x should be less, because it decreases to the left</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> horses<span class="sh_symbol">[</span>lead_horse<span class="sh_symbol">].</span><span class="sh_function">position</span><span class="sh_symbol">()[</span><span class="sh_number">0</span><span class="sh_symbol">]</span> <span class="sh_symbol">&lt;</span> <span class="sh_symbol">-</span><span class="sh_number">125</span> <span class="sh_keyword">and</span> <span class="sh_keyword">not</span> midrace_leading_horse_displayed<span class="sh_symbol">:</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_function">displayBanner</span><span class="sh_symbol">(</span>banners<span class="sh_symbol">[</span><span class="sh_number">2</span><span class="sh_symbol">][</span>lead_horse<span class="sh_symbol">],</span> <span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_symbol">-</span><span class="sh_number">300</span><span class="sh_symbol">))</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;early_leading_horse_displayed <span class="sh_symbol">=</span> True</li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#display early lead banner</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">elif</span> horses<span class="sh_symbol">[</span>lead_horse<span class="sh_symbol">].</span><span class="sh_function">position</span><span class="sh_symbol">()[</span><span class="sh_number">0</span><span class="sh_symbol">]</span> <span class="sh_symbol">&lt;</span> <span class="sh_number">125</span> <span class="sh_keyword">and</span> <span class="sh_keyword">not</span> early_leading_horse_displayed<span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_function">displayBanner</span><span class="sh_symbol">(</span>banners<span class="sh_symbol">[</span><span class="sh_number">1</span><span class="sh_symbol">][</span>lead_horse<span class="sh_symbol">],</span> <span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_symbol">-</span><span class="sh_number">300</span><span class="sh_symbol">))</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;early_leading_horse_displayed <span class="sh_symbol">=</span> True&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#check for horse over finish line</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> horse<span class="sh_symbol">.</span><span class="sh_function">position</span><span class="sh_symbol">()[</span><span class="sh_number">0</span><span class="sh_symbol">]</span> <span class="sh_symbol">&lt;</span> finish_line<span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have_winner <span class="sh_symbol">=</span> True</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">else</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i <span class="sh_symbol">=</span> <span class="sh_symbol">(</span>i<span class="sh_number">+1</span><span class="sh_symbol">)</span> <span class="sh_symbol">%</span> <span class="sh_function">len</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">)</span> <span class="sh_comment">#keep going round and round, from horse_1 to horse_10</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> i</li><li>&nbsp;&nbsp;&nbsp;&nbsp;</li><li><span class="sh_keyword">def</span> <span class="sh_function">displayWinner</span><span class="sh_symbol">(</span>winning_horse<span class="sh_symbol">,</span> winner_banner<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#display "We have a Winner" banner</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_function">displayBanner</span><span class="sh_symbol">(</span>winner_banner<span class="sh_symbol">,</span> <span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_symbol">-</span><span class="sh_number">300</span><span class="sh_symbol">))</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_comment">#blink winning horse</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;show <span class="sh_symbol">=</span> False</li><li>&nbsp;&nbsp;&nbsp;&nbsp;blink_counter <span class="sh_symbol">=</span> <span class="sh_number">5</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">while</span> blink_counter <span class="sh_symbol">!=</span> <span class="sh_number">0</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> show<span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winning_horse<span class="sh_symbol">.</span><span class="sh_function">showturtle</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show <span class="sh_symbol">=</span> False</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blink_counter <span class="sh_symbol">=</span> blink_counter <span class="sh_symbol">-</span> <span class="sh_number">1</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">else</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;winning_horse<span class="sh_symbol">.</span><span class="sh_function">hideturtle</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show <span class="sh_symbol">=</span> True</li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time<span class="sh_symbol">.</span><span class="sh_function">sleep</span><span class="sh_symbol">(.</span><span class="sh_number">4</span><span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment">#init number of horses</span></li><li>num_horses <span class="sh_symbol">=</span> <span class="sh_number">10</span></li><li></li><li><span class="sh_comment">#set window size</span></li><li>turtle<span class="sh_symbol">.</span><span class="sh_function">setup</span><span class="sh_symbol">(</span><span class="sh_number">750</span><span class="sh_symbol">,</span> <span class="sh_number">750</span><span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment">#get turtle window</span></li><li>window <span class="sh_symbol">=</span> turtle<span class="sh_symbol">.</span><span class="sh_function">Screen</span><span class="sh_symbol">()</span></li><li>window<span class="sh_symbol">.</span><span class="sh_function">title</span><span class="sh_symbol">(</span><span class="sh_string">'Horse Race'</span><span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment">#init screen layout parameters</span></li><li>start_loc <span class="sh_symbol">=</span> <span class="sh_symbol">(</span><span class="sh_number">240</span><span class="sh_symbol">,</span> <span class="sh_symbol">-</span><span class="sh_number">220</span><span class="sh_symbol">)</span></li><li>track_separation <span class="sh_symbol">=</span> <span class="sh_number">60</span></li><li>finish_line <span class="sh_symbol">=</span> <span class="sh_symbol">-</span><span class="sh_number">240</span></li><li>forward_incr <span class="sh_symbol">=</span> <span class="sh_number">6</span></li><li></li><li><span class="sh_comment">#register images</span></li><li>horse_images <span class="sh_symbol">=</span> <span class="sh_function">getHorseImages</span><span class="sh_symbol">(</span>num_horses<span class="sh_symbol">)</span></li><li>banner_images <span class="sh_symbol">=</span> <span class="sh_function">getBannerImages</span><span class="sh_symbol">(</span>num_horses<span class="sh_symbol">)</span></li><li><span class="sh_function">registerHorseImages</span><span class="sh_symbol">(</span>horse_images<span class="sh_symbol">)</span></li><li><span class="sh_function">registerBannerImages</span><span class="sh_symbol">(</span>banner_images<span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment">#generate and init horses</span></li><li>horses <span class="sh_symbol">=</span> <span class="sh_function">generateHorses</span><span class="sh_symbol">(</span>horse_images<span class="sh_symbol">,</span> num_horses<span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment"># place horses at starting line</span></li><li><span class="sh_function">placeHorses</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">,</span> start_loc<span class="sh_symbol">,</span> track_separation<span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment">#start horses</span></li><li>winner <span class="sh_symbol">=</span> <span class="sh_function">startHorses</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">,</span> banner_images<span class="sh_symbol">,</span> finish_line<span class="sh_symbol">,</span> forward_incr<span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment">#light up for winning horse</span></li><li><span class="sh_function">displayWinner</span><span class="sh_symbol">(</span>horses<span class="sh_symbol">[</span>winner<span class="sh_symbol">],</span> banner_images<span class="sh_symbol">[</span><span class="sh_number">3</span><span class="sh_symbol">][</span><span class="sh_number">0</span><span class="sh_symbol">])</span></li><li></li><li><span class="sh_comment">#terminate program when close window</span></li><li>turtle<span class="sh_symbol">.</span><span class="sh_function">exitonclick</span><span class="sh_symbol">()</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">import turtle
+import random
+import time
+
+
+class Horse(turtle.Turtle):
+	def __init__(self, image_file):
+		super(Horse, self).__init__()
+		self.hideturtle()
+		self.shape(image_file)
+
+def getHorseImages(num_horses):
+	images = []
+	for i in range(0, num_horses):
+		images = images + ['horse_' + str(i+1) + '_image.gif']
+
+	return images
+
+def registerHorseImages(images):
+	for i in range(0, len(images)):
+		turtle.register_shape(images[i])
+
+def placeHorses(horses, loc, separation):
+	for i in range(0, len(horses)):
+		horses[i].hideturtle()
+		horses[i].penup()
+		horses[i].setposition(loc[0], loc[1] + i * separation)
+		horses[i].setheading(180)
+		horses[i].showturtle()
+		horses[i].pendown()
+
+def getBannerImages(num_horses):
+	all_images = []
+
+	#get "They're off" banner image
+	images = ['theyre_off_banner.gif']
+	all_images.append(images)
+
+	#get early lead banner images
+	images = []
+	for i in range(0, num_horses):
+		images = images + ['lead_at_start_' + str(i+1) + '.gif']
+	all_images.append(images)	
+
+	#get mid-way lead banner images
+	images = []
+	for i in range(0, num_horses):
+		images = images + ['looking_good_' + str(i+1) + '.gif']
+	all_images.append(images)	
+
+	#get "We Have a Winner" banner image
+	images = ['winner_banner.gif']
+	all_images.append(images)
+
+	return all_images
+
+
+
+def registerBannerImages(images):
+	for i in range(0, len(images)):
+		for j in range(0, len(images[i])):
+			turtle.register_shape(images[i][j])	
+
+
+
+def generateHorses(images, num_horses):
+	horses = []
+	for i in range(0, num_horses):
+		horse = Horse(images[i])
+		horses.append(horse)
+
+	return horses
+	
+
+def findLeadHorse(horses):
+	lead_horse = 0
+	for i in range(1, len(horses)):
+		if horses[i].position()[0] &lt; horses[lead_horse].position()[0]:
+			lead_horse = i
+
+	return lead_horse
+
+def displayBanner(banner, position):
+	the_turtle = turtle.getturtle()
+	the_turtle.hideturtle()
+	the_turtle.penup()
+	the_turtle.setposition(position[0], position[1])	
+	the_turtle.showturtle()		
+	the_turtle.shape(banner)
+	the_turtle.stamp()
+	#hide default turtle and keep from drawing
+
+def startHorses(horses, banners, finish_line, forward_incr):
+	#init
+	have_winner = False
+	early_leading_horse_displayed = False
+	midrace_leading_horse_displayed = False
+
+	#display "They're off" banner image
+	displayBanner(banner_images[0][0], (0, -300))
+
+	i = 0
+	while not have_winner:
+		horse = horses[i]
+		horse.forward(random.randint(1,3) * forward_incr)
+
+		#display mid-race lead banner
+		lead_horse = findLeadHorse(horses) # x should be less, because it decreases to the left
+		if horses[lead_horse].position()[0] &lt; -125 and not midrace_leading_horse_displayed:
+
+			displayBanner(banners[2][lead_horse], (0, -300))
+			early_leading_horse_displayed = True
+
+		#display early lead banner
+		elif horses[lead_horse].position()[0] &lt; 125 and not early_leading_horse_displayed:
+			displayBanner(banners[1][lead_horse], (0, -300))
+			early_leading_horse_displayed = True	
+
+		#check for horse over finish line
+		if horse.position()[0] &lt; finish_line:
+			have_winner = True
+		else:
+			i = (i+1) % len(horses) #keep going round and round, from horse_1 to horse_10
+	return i
+	
+def displayWinner(winning_horse, winner_banner):
+	#display "We have a Winner" banner
+	displayBanner(winner_banner, (0, -300))
+
+	#blink winning horse
+	show = False
+	blink_counter = 5
+	while blink_counter != 0:
+		if show:
+			winning_horse.showturtle()
+			show = False
+			blink_counter = blink_counter - 1
+		else:
+			winning_horse.hideturtle()
+			show = True
+
+		time.sleep(.4)
+
+#init number of horses
+num_horses = 10
+
+#set window size
+turtle.setup(750, 750)
+
+#get turtle window
+window = turtle.Screen()
+window.title('Horse Race')
+
+#init screen layout parameters
+start_loc = (240, -220)
+track_separation = 60
+finish_line = -240
+forward_incr = 6
+
+#register images
+horse_images = getHorseImages(num_horses)
+banner_images = getBannerImages(num_horses)
+registerHorseImages(horse_images)
+registerBannerImages(banner_images)
+
+#generate and init horses
+horses = generateHorses(horse_images, num_horses)
+
+# place horses at starting line
+placeHorses(horses, start_loc, track_separation)
+
+#start horses
+winner = startHorses(horses, banner_images, finish_line, forward_incr)
+
+#light up for winning horse
+displayWinner(horses[winner], banner_images[3][0])
+
+#terminate program when close window
+turtle.exitonclick()				
+</pre></div></div>
+		</div>
+		<div class="col-md-4">
+			<img src="../static/img/horse1.png">
+			<img src="../static/img/horse2.png">
+			<img src="../static/img/horse3.png">
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">/*!
+/*!
+ *  Syntax Highlighting based on 'Snippet' by SteamDev (http://steamdev.com/snippet)
+ *  http://syntaxhighlight.in v1.0.0
+ *  Date: Sunday Jan 1, 2012
+ *  version for JQuery
+ */
+$(document).ready(function(){function a(b){top.consoleRef=window.open("","myconsole","width=600,height=300,left=50,top=50,menubar=0,toolbar=0,location=0,status=0,scrollbars=1,resizable=1");top.consoleRef.document.writeln("<html><head><title>Snippet :: Code View :: "+location.href+'</title></head><body bgcolor=white onLoad="self.focus()"><pre>'+b+"</pre></body></html>");top.consoleRef.document.close()}$(".snippet-container").each(function(b){$(this).find("a.snippet-text").click(function(){var d=$(this).parents(".snippet-wrap").find(".snippet-formatted");var c=$(this).parents(".snippet-wrap").find(".snippet-textonly");d.toggle();c.toggle();if(c.is(":visible")){$(this).html("html")}else{$(this).html("text")}return false});$(this).find("a.snippet-window").click(function(){var c=$(this).parents(".snippet-wrap").find(".snippet-textonly").html();a(c);$(this).blur();return false})});$(".snippet-toggle").each(function(b){$(this).click(function(){$(this).parents(".snippet-container").find(".snippet-wrap").toggle()})})});
+
+</script>
+</body>  
+{% endblock %}

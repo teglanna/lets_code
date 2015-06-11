@@ -1,0 +1,155 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    	<style type="text/css">
+/*!
+ *  Syntax Highlighting based on 'Snippet' by SteamDev (http://steamdev.com/snippet)
+ *  http://syntaxhighlight.in v1.0.0
+ *  Date: Sunday Jan 1, 2012
+ *
+ * .sh_sourceCode is the <pre> 
+ */.sh_default{background:0;padding:0;margin:0;border:0 none}.sh_default pre{background-color:#e7e5dc;color:#5c5c5c;font-weight:normal;font-style:normal;padding:.5em!important;-moz-border-radius:3px!important;-webkit-border-radius:3px!important;border-radius:3px!important;-moz-box-shadow:1px 1px 3px 1px #888!important;-webkit-box-shadow:1px 1px 3px 1px #888!important;box-shadow:1px 1px 3px 1px #888!important}.sh_default .snippet-formatted .snippet-num{margin:0;padding-left:4em}.sh_default .sh_sourceCode li{background-color:#fff;border-left:3px solid #6ce26c}.sh_default .sh_sourceCode li:nth-child(odd){background-color:#f8f8f8}.sh_default .sh_sourceCode .sh_keyword{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_type{color:#8080c0;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_string{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_regexp{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_specialchar{color:#f0f;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_comment{color:#ff8000;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_number{color:#800080;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_preproc{color:#0080c0;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_symbol{color:#ff0080;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_function{color:#046;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_cbracket{color:#ff0080;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_url{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_date{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_time{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_file{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_ip{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_name{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_variable{color:#0080c0;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_oldfile{color:#f0f;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_newfile{color:#a68500;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_difflines{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_selector{color:#0080c0;font-weight:normal;font-style:normal}.sh_default .sh_sourceCode .sh_property{color:#bb7977;font-weight:bold;font-style:normal}.sh_default .sh_sourceCode .sh_value{color:#a68500;font-weight:normal;font-style:normal}.snippet-textonly:focus{background:#333!important;color:#fff!important}.snippet-wrap pre{margin:5px 0;padding:0}.snippet-wrap .snippet-menu a,.snippet-wrap .snippet-hide a{padding:0 5px}.snippet-wrap pre.sh_sourceCode{padding:1em;line-height:1.8em;overflow:auto;position:relative;-moz-border-radius:15px;-webkit-border-radius:15px;border-radius:15px;box-shadow:2px 2px 5px #000;-moz-box-shadow:2px 2px 5px #000;-webkit-box-shadow:2px 2px 5px #000}.snippet-wrap pre.snippet-textonly{padding:2em}.snippet-wrap pre.snippet-formatted{*padding:2em 1em}.snippet-reveal pre.sh_sourceCode{padding:.5em 1em;text-align:right}.snippet-wrap .snippet-num li{padding-left:1.5em}.snippet-wrap .snippet-no-num{list-style:none;padding:0;margin:0}.snippet-wrap .snippet-no-num li{list-style:none;padding-left:0}.snippet-wrap .snippet-num{margin:1em 0 1em 1em;padding-left:3em}.snippet-wrap .snippet-num li{list-style:decimal-leading-zero outside none}.snippet-wrap .snippet-no-num li.box{padding:0 6px;margin-left:-6px}.snippet-wrap .snippet-num li.box{border:1px solid;list-style-position:inside;margin-left:-3em;padding-left:6px}.snippet-wrap .snippet-num li.box{*margin-left:-2.4em}.snippet-wrap li.box-top{border-width:1px 1px 0!important}.snippet-wrap li.box-bot{border-width:0 1px 1px!important}.snippet-wrap li.box-mid{border-width:0 1px!important}.snippet-wrap .snippet-num li .box-sp{width:18px;display:inline-block}.snippet-wrap .snippet-num li .box-sp{*width:27px}.snippet-wrap .snippet-no-num li.box{border:1px solid}.snippet-wrap .snippet-no-num li .box-sp{display:none}.snippet-container .snippet-menu{border-radius:3px;background:#fff;padding:2px 5px 3px;display:inline-block;*display:inline;zoom:1}.snippet-container .sh_url,.snippet-wrap .snippet-toggle{text-decoration:none!important;font:12px sans-serif!important}.snippet-window{border-right-width:1px;border-right-style:solid}.snippet-wrap .snippet-toggle{display:block}.snippet-hide pre{background:#fff!important}.snippet-hide pre a{color:#333!important}
+</style>
+</head>
+<body>
+
+<div class="container"> 
+	<div class="row">
+	<h4>balls.py</h4></div>  
+	<div class="row">
+		<div class="col-md-8">
+<div class="snippet-container"><div class="sh_default snippet-wrap">
+<!--<div class="snippet-menu sh_sourceCode">
+<a class="snippet-text sh_url" href="#">balls.py</a></div>-->
+<pre class="shi_pre sh_python snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_preproc">import</span> turtle</li><li><span class="sh_preproc">import</span> random</li><li><span class="sh_preproc">import</span> time</li><li></li><li></li><li><span class="sh_keyword">class</span> <span class="sh_function">Ball</span><span class="sh_symbol">(</span>turtle<span class="sh_symbol">.</span>Turtle<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">def</span> <span class="sh_function">__init__</span><span class="sh_symbol">(</span>self<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_function">super</span><span class="sh_symbol">(</span>Ball<span class="sh_symbol">,</span>self<span class="sh_symbol">).</span><span class="sh_function">__init__</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self<span class="sh_symbol">.</span><span class="sh_function">shape</span><span class="sh_symbol">(</span><span class="sh_string">'circle'</span><span class="sh_symbol">)</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self<span class="sh_symbol">.</span><span class="sh_function">fillcolor</span><span class="sh_symbol">(</span><span class="sh_string">'blue'</span><span class="sh_symbol">)</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self<span class="sh_symbol">.</span><span class="sh_function">speed</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">)</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self<span class="sh_symbol">.</span><span class="sh_function">penup</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self<span class="sh_symbol">.</span><span class="sh_function">setheading</span><span class="sh_symbol">(</span>random<span class="sh_symbol">.</span><span class="sh_function">randint</span><span class="sh_symbol">(</span><span class="sh_number">1</span><span class="sh_symbol">,</span> <span class="sh_number">359</span><span class="sh_symbol">))</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">def</span> <span class="sh_function">bounce</span><span class="sh_symbol">(</span>self<span class="sh_symbol">,</span> new_direction<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> new_direction <span class="sh_symbol">==</span> <span class="sh_string">'left'</span> <span class="sh_keyword">or</span> new_direction <span class="sh_symbol">==</span> <span class="sh_string">'right'</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new_heading <span class="sh_symbol">=</span> <span class="sh_number">180</span> <span class="sh_symbol">-</span> self<span class="sh_symbol">.</span><span class="sh_function">heading</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">elif</span> new_direction <span class="sh_symbol">==</span> <span class="sh_string">'down'</span> <span class="sh_keyword">or</span> new_direction <span class="sh_symbol">==</span> <span class="sh_string">'up'</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new_heading <span class="sh_symbol">=</span> <span class="sh_number">360</span> <span class="sh_symbol">-</span> self<span class="sh_symbol">.</span><span class="sh_function">heading</span><span class="sh_symbol">()</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> new_heading</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">createBalls</span><span class="sh_symbol">(</span>num_balls<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;balls <span class="sh_symbol">=</span> <span class="sh_symbol">[]</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> k <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> num_balls<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my_ball <span class="sh_symbol">=</span> <span class="sh_function">Ball</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balls<span class="sh_symbol">.</span><span class="sh_function">append</span><span class="sh_symbol">(</span>my_ball<span class="sh_symbol">)</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> balls&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">left_edge</span><span class="sh_symbol">(</span>ball<span class="sh_symbol">,</span> screen_width<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> ball<span class="sh_symbol">.</span><span class="sh_function">xcor</span><span class="sh_symbol">()</span> <span class="sh_symbol">&lt;</span> <span class="sh_symbol">-</span>screen_width <span class="sh_symbol">/</span> <span class="sh_number">2</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> True</li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">else</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> False</li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">right_edge</span><span class="sh_symbol">(</span>ball<span class="sh_symbol">,</span> screen_width<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> ball<span class="sh_symbol">.</span><span class="sh_function">xcor</span><span class="sh_symbol">()</span> <span class="sh_symbol">&gt;</span> screen_width <span class="sh_symbol">/</span> <span class="sh_number">2</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> True</li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">else</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> False&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">top_edge</span><span class="sh_symbol">(</span>ball<span class="sh_symbol">,</span> screen_height<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> ball<span class="sh_symbol">.</span><span class="sh_function">ycor</span><span class="sh_symbol">()</span> <span class="sh_symbol">&gt;</span> screen_height <span class="sh_symbol">/</span> <span class="sh_number">2</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> True</li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">else</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> False</li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">bottom_edge</span><span class="sh_symbol">(</span>ball<span class="sh_symbol">,</span> screen_height<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> ball<span class="sh_symbol">.</span><span class="sh_function">ycor</span><span class="sh_symbol">()</span> <span class="sh_symbol">&lt;</span> <span class="sh_symbol">-</span>screen_height <span class="sh_symbol">/</span> <span class="sh_number">2</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> True</li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">else</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> False&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li><span class="sh_keyword">def</span> <span class="sh_function">new_head</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> k <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_function">len</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">)):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;head <span class="sh_symbol">=</span> balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">heading</span><span class="sh_symbol">()</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> <span class="sh_symbol">-</span><span class="sh_number">45</span> <span class="sh_symbol">&lt;=</span> head <span class="sh_symbol">&lt;=</span> <span class="sh_number">45</span> <span class="sh_keyword">or</span> <span class="sh_number">135</span> <span class="sh_symbol">&lt;=</span> head <span class="sh_symbol">&lt;=</span> <span class="sh_number">225</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">setheading</span><span class="sh_symbol">(</span><span class="sh_number">180</span><span class="sh_symbol">-</span>head<span class="sh_symbol">)</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> <span class="sh_number">45</span> <span class="sh_symbol">&lt;</span> head <span class="sh_symbol">&lt;</span> <span class="sh_number">135</span> <span class="sh_keyword">or</span> <span class="sh_number">225</span> <span class="sh_symbol">&lt;</span> head <span class="sh_symbol">&lt;</span> <span class="sh_number">315</span><span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">setheading</span><span class="sh_symbol">(</span><span class="sh_number">360</span><span class="sh_symbol">-</span>head<span class="sh_symbol">)</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">return</span> head&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li></li><li><span class="sh_comment">#init screen size</span></li><li>screen_width <span class="sh_symbol">=</span> <span class="sh_number">800</span></li><li>screen_height <span class="sh_symbol">=</span> <span class="sh_number">600</span></li><li>turtle<span class="sh_symbol">.</span><span class="sh_function">setup</span><span class="sh_symbol">(</span>screen_width<span class="sh_symbol">,</span> screen_height<span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment">#create turtle window</span></li><li>window <span class="sh_symbol">=</span> turtle<span class="sh_symbol">.</span><span class="sh_function">Screen</span><span class="sh_symbol">()</span></li><li>window<span class="sh_symbol">.</span><span class="sh_function">title</span><span class="sh_symbol">(</span><span class="sh_string">"Bouncing Balls"</span><span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment">#prompt user for execution time and number of balls</span></li><li>num_seconds <span class="sh_symbol">=</span> <span class="sh_function">int</span><span class="sh_symbol">(</span><span class="sh_function">input</span><span class="sh_symbol">(</span><span class="sh_string">'Enter number of seconds to run: '</span><span class="sh_symbol">))</span></li><li>num_balls <span class="sh_symbol">=</span> <span class="sh_function">int</span><span class="sh_symbol">(</span><span class="sh_function">input</span><span class="sh_symbol">(</span><span class="sh_string">'Enter number of balls in simulation: '</span><span class="sh_symbol">))</span></li><li></li><li><span class="sh_comment">#create balls</span></li><li>balls <span class="sh_symbol">=</span> <span class="sh_function">createBalls</span><span class="sh_symbol">(</span>num_balls<span class="sh_symbol">)</span></li><li></li><li><span class="sh_comment">#set start time</span></li><li>start_time <span class="sh_symbol">=</span> time<span class="sh_symbol">.</span><span class="sh_function">time</span><span class="sh_symbol">()</span></li><li></li><li><span class="sh_comment">#begin simulation</span></li><li>terminate <span class="sh_symbol">=</span> False</li><li></li><li><span class="sh_keyword">while</span> <span class="sh_keyword">not</span> terminate<span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">for</span> k <span class="sh_keyword">in</span> <span class="sh_function">range</span><span class="sh_symbol">(</span><span class="sh_number">0</span><span class="sh_symbol">,</span> <span class="sh_function">len</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">)):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">forward</span><span class="sh_symbol">(</span><span class="sh_number">15</span><span class="sh_symbol">)</span></li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> <span class="sh_function">left_edge</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">[</span>k<span class="sh_symbol">],</span> screen_width<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">setheading</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">bounce</span><span class="sh_symbol">(</span><span class="sh_string">'right'</span><span class="sh_symbol">))</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">elif</span> <span class="sh_function">right_edge</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">[</span>k<span class="sh_symbol">],</span> screen_width<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">setheading</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">bounce</span><span class="sh_symbol">(</span><span class="sh_string">'left'</span><span class="sh_symbol">))</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">elif</span> <span class="sh_function">top_edge</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">[</span>k<span class="sh_symbol">],</span> screen_height<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">setheading</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">bounce</span><span class="sh_symbol">(</span><span class="sh_string">'down'</span><span class="sh_symbol">))</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">elif</span> <span class="sh_function">bottom_edge</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">[</span>k<span class="sh_symbol">],</span> screen_height<span class="sh_symbol">):</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">setheading</span><span class="sh_symbol">(</span>balls<span class="sh_symbol">[</span>k<span class="sh_symbol">].</span><span class="sh_function">bounce</span><span class="sh_symbol">(</span><span class="sh_string">'up'</span><span class="sh_symbol">))</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sh_keyword">if</span> time<span class="sh_symbol">.</span><span class="sh_function">time</span><span class="sh_symbol">()</span> <span class="sh_symbol">-</span> start_time <span class="sh_symbol">&gt;</span> num_seconds<span class="sh_symbol">:</span></li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;terminate <span class="sh_symbol">=</span> True&nbsp;&nbsp;&nbsp;&nbsp;</li><li></li><li>turtle<span class="sh_symbol">.</span><span class="sh_function">exitonclick</span><span class="sh_symbol">()</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">
+import turtle
+import random
+import time
+
+
+class Ball(turtle.Turtle):
+	def __init__(self):
+		super(Ball,self).__init__()
+		self.shape('circle')
+		self.fillcolor('blue')
+		self.speed(0)
+		self.penup()
+		self.setheading(random.randint(1, 359))
+
+	def bounce(self, new_direction):
+		if new_direction == 'left' or new_direction == 'right':
+			new_heading = 180 - self.heading()
+		elif new_direction == 'down' or new_direction == 'up':
+			new_heading = 360 - self.heading()
+
+		return new_heading
+		
+
+def createBalls(num_balls):
+	balls = []
+	for k in range(0, num_balls):
+		my_ball = Ball()
+		balls.append(my_ball)
+
+	return balls	
+
+
+def left_edge(ball, screen_width):
+	if ball.xcor() &lt; -screen_width / 2:
+		return True
+	else:
+		return False
+
+def right_edge(ball, screen_width):
+	if ball.xcor() &gt; screen_width / 2:
+		return True
+	else:
+		return False	
+
+def top_edge(ball, screen_height):
+	if ball.ycor() &gt; screen_height / 2:
+		return True
+	else:
+		return False
+
+def bottom_edge(ball, screen_height):
+	if ball.ycor() &lt; -screen_height / 2:
+		return True
+	else:
+		return False			
+
+def new_head(balls):
+	for k in range(0, len(balls)):
+		head = balls[k].heading()
+		if -45 &lt;= head &lt;= 45 or 135 &lt;= head &lt;= 225:
+			balls[k].setheading(180-head)
+		if 45 &lt; head &lt; 135 or 225 &lt; head &lt; 315:
+			balls[k].setheading(360-head)
+	return head			
+
+
+#init screen size
+screen_width = 800
+screen_height = 600
+turtle.setup(screen_width, screen_height)
+
+#create turtle window
+window = turtle.Screen()
+window.title("Bouncing Balls")
+
+#prompt user for execution time and number of balls
+num_seconds = int(input('Enter number of seconds to run: '))
+num_balls = int(input('Enter number of balls in simulation: '))
+
+#create balls
+balls = createBalls(num_balls)
+
+#set start time
+start_time = time.time()
+
+#begin simulation
+terminate = False
+
+while not terminate:
+	for k in range(0, len(balls)):
+		balls[k].forward(15)
+
+		if left_edge(balls[k], screen_width):
+			balls[k].setheading(balls[k].bounce('right'))
+		elif right_edge(balls[k], screen_width):
+			balls[k].setheading(balls[k].bounce('left'))
+		elif top_edge(balls[k], screen_height):
+			balls[k].setheading(balls[k].bounce('down'))
+		elif bottom_edge(balls[k], screen_height):
+			balls[k].setheading(balls[k].bounce('up'))		
+
+		if time.time() - start_time &gt; num_seconds:
+			terminate = True	
+
+turtle.exitonclick()			
+
+
+</pre></div></div>
+
+		</div>
+	
+		<div class="col-md-4">
+			<img src="../static/img/balls.png">
+			<img src="../static/img/balls2.png">
+		</div>
+	</div>	
+</div>
+
+<script type="text/javascript">/*!
+/*!
+ *  Syntax Highlighting based on 'Snippet' by SteamDev (http://steamdev.com/snippet)
+ *  http://syntaxhighlight.in v1.0.0
+ *  Date: Sunday Jan 1, 2012
+ *  version for JQuery
+ */
+$(document).ready(function(){function a(b){top.consoleRef=window.open("","myconsole","width=600,height=300,left=50,top=50,menubar=0,toolbar=0,location=0,status=0,scrollbars=1,resizable=1");top.consoleRef.document.writeln("<html><head><title>Snippet :: Code View :: "+location.href+'</title></head><body bgcolor=white onLoad="self.focus()"><pre>'+b+"</pre></body></html>");top.consoleRef.document.close()}$(".snippet-container").each(function(b){$(this).find("a.snippet-text").click(function(){var d=$(this).parents(".snippet-wrap").find(".snippet-formatted");var c=$(this).parents(".snippet-wrap").find(".snippet-textonly");d.toggle();c.toggle();if(c.is(":visible")){$(this).html("html")}else{$(this).html("text")}return false});$(this).find("a.snippet-window").click(function(){var c=$(this).parents(".snippet-wrap").find(".snippet-textonly").html();a(c);$(this).blur();return false})});$(".snippet-toggle").each(function(b){$(this).click(function(){$(this).parents(".snippet-container").find(".snippet-wrap").toggle()})})});
+
+</script>
+    
+</body>
+{% endblock %}

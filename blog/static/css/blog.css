@@ -1,0 +1,114 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family:'Ubuntu', sans-serif;
+    line-height:1.6em;
+    color:#666;
+    background-image: url(../img/pattern.png);
+    font-size:14px;
+}
+
+.container {
+    background: #E6E6E6;
+    
+}
+
+header {
+    background: #eee;
+    padding: 30px 10px;
+}
+
+nav {
+    margin-left: 240px;
+}
+
+nav ul {
+    background: #efefef; 
+    /*background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+    background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+    background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);*/
+    padding: 0 10px;
+    border-radius: 5px;  
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    z-index: 1000;
+}
+nav ul:after {
+    content: ""; clear: both; display: block;
+}
+
+nav ul li {
+    float: left;
+    min-width: 100px;
+    text-align: center;
+}
+
+nav ul li:hover  {
+    background: #A6A6A6;
+    background: linear-gradient(top, #A6A6A6 0%, #A6A6A6 40%);
+    background: -moz-linear-gradient(top, #A6A6A6 0%, #A6A6A6 40%);
+    background: -webkit-linear-gradient(top, #A6A6A6 0%,#A6A6A6 40%);
+}
+
+nav ul li:hover a {
+    color: #fff;
+}
+    
+nav ul li a {
+    display: block; padding: 15px 25px;
+    color: #757575; 
+    text-decoration: none;
+}   
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    background: #A6A6A6; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+}
+    nav ul ul li {
+        float: none; 
+        border-top: 1px solid #6b727c;
+        /*border-bottom: 1px solid #575f6a;*/
+        text-align: center;
+        position: relative;
+    }
+        nav ul ul li a {
+            padding: 10px 10px;
+            color: #fff;
+        }   
+            nav ul ul li a:hover {
+                background: #4b545f;
+            }
+
+nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#introduction {
+    padding: 30px;
+}
+
+
+/*em {
+    background: #E9E4BE;
+    padding: 0 30px;
+}*/
+
+footer {
+    text-align: center;
+    padding:20px;
+    background:#eee;
+}
