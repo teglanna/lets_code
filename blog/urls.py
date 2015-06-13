@@ -10,4 +10,6 @@ urlpatterns = [
     url(r'^learning_stuffs/$', views.learning_stuffs, name='learning_stuffs'),
     url(r'^balls/$', views.balls, name='balls'),
     url(r'^horse/$', views.horse, name='horse'),
+    url(r'^finefinder/$', views.finefinder, name='finefinder'),
+    url(r'^learning_stuffs/$', views.learning_stuffs, name='learning_stuffs'),
 ]

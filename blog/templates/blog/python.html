@@ -2,11 +2,13 @@
 
 {% block content %}
     	
-</head>
-<body>
-
-<div>Python codes</div>
-
-</body>
+<div class="row">
+	<div class="col-md-6 example"><img class="img-responsive" src="../static/img/balls3.png">
+	<a href="{% url "blog.views.balls" %}">Show code</a>
+	</div>
+	<div class="col-md-6 example"><img class="img-responsive" src="../static/img/horse4.png">
+		<a href="{% url "blog.views.horse" %}">Show code</a>
+	</div>
+</div>
     
 {% endblock %}

@@ -27,3 +27,9 @@ def balls(request):
 
 def horse(request):
 	return render(request, 'blog/horse.html')
+
+def finefinder(request):
+	return render(request, 'blog/finefinder.html')
+
+def learning_stuffs(request):
+	return render(request, 'blog/learning_stuffs.html')
